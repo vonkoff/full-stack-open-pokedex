@@ -13,6 +13,11 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: '12.x'
+      - uses: akhileshns/heroku-deploy@v3.12.12         
+      with:
+          heroku_api_key: ${{c3af2a83-afed-4fc7-a1b1-4dbad5b501f9}}
+          heroku_app_name: "part11-ilv" 
+          heroku_email: "jaaajaa102@gmail.com"
       - name: npm install
         run: npm install
       - name: lint
