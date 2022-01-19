@@ -14,8 +14,8 @@ jobs:
         with:
           node-version: '12.x'
       - uses: akhileshns/heroku-deploy@v3.12.12         
-        with:
-          heroku_api_key: ${{secrets.c3af2a83-afed-4fc7-a1b1-4dbad5b501f9}}
+      with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "part11-ilv" 
           heroku_email: "jaaajaa102@gmail.com"
       - name: npm install
